@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth text-[16px]">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="build/css/style.css">
+
+        <!-- Font and icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <!-- Font and icons -->
+
+        <!-- Custom scrollbar -->
+        <script src="build/js/readingScrollbar.js" defer></script>
+        <!-- Custom scrollbar -->
+
+        <!-- Always load page on top -->
+        <script src="build/js/backOnTop.js" defer></script>
+        <!-- Always load page on top -->
+
+        <!-- Hamburger menu -->
+        <script src="build/js/hamburgerToggle.js"></script>
+        <!-- Hamburger menu -->
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon">
+        <!-- Favicon -->
+
+        <title>Test</title>
+    </head>
+    <body class="w-full min-h-screen md:flex md:justify-center bg-[#f8f7f3] sm:pt-16 md:pt-0">
+        <div id="scrollbar" class="w-full"></div>
+        <a id="top"></a> <!-- Make sure that whenever the #home link is pressed, the website doesn't respond (issue reason) -->
+        <header class="sm:w-full lg:w-[95%] h-16 sm:mt-2 md:mt-7 flex items-center justify-between px-2 border-[#eeece4] border-2 rounded-lg fixed top-0 bg-[#f8f7f3] z-[9999] transition-height duration-500 ease-out" id="navbar">
+            <a href="index.html" class="z-10 sm:absolute sm:top-[10px] md:static">
+                <img src="build/img/logo.png" alt="main logo" class="w-20">
+            </a>
+            <div class="h-full sm:flex md:hidden items-start pt-[10px] text-[2.5rem] absolute right-2" id="hamburger">
+                <i class='bx bx-menu cursor-pointer z-10' id="showButton"></i>
+                <i class='bx bx-x cursor-pointer z-10 hidden' id="hideButton"></i>
+            </div>
+            <nav class="w-full h-full hidden sm:flex-col md:flex md:flex-row justify-center items-center sm:space-y-10 md:space-y-0 sm:font-medium md:space-x-10 xxl:space-x-12 absolute right-0 text-gray-500 overflow-hidden" id="main-nav">
+                <a href="#top">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#exhibitions">Exhibitions</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="profile h-full w-auto md:flex items-center absolute right-0 hidden">
+                <p class="hidden lg:flex text-[1rem] text-gray-500"> <span class="text-black hidden xxl:flex items-center mr-1"><i class='bx bx-aperture text-[#fca946] pr-1 text-[1.25rem]'></i> Sala Canal,</span>04 Oct 2024</p>
+                <img src="build/img/profile.jpg" alt="profile image" class="rounded-full w-8 h-8 mr-2 ml-3">
+            </div>
+        </header>
+        <main class="w-full h-full flex flex-col items-center overflow-x-hidden mt-24" id="site-wrapper">
+            <section id="home" class="max-w-[1500px] lg:h-full md:h-3/4 flex sm:flex-col sm:items-center md:flex-row md:items-start relative scroll-mt-10">
+                <div class="text sm:w-full md:w-1/2 h-full">
+                    <div id="introduction" class="w-full mt-16">
+                        <h2
+                            class="sm:text-[6rem] md:text-[7rem] lg:text-[8rem] xl:text-[9rem] xxl:text-[11rem] xxxl:text-[14rem] leading-[0.7] font-extrabold sm:text-center md:text-right w-full md:pr-5 lowercase">
+                            Visual Poetry</h2>
+                        <p class="sm:text-center sm:px-2 md:text-right md:pr-5 xl:pl-56 xxl:pl-80 xxxl:pl-96 font-medium mt-16">
+                            Welcome to a visual journey that transcends time and space. Discover the artistry of moments, captured in
+                            motion!
+                        </p>
+                    </div>
+                    <div id="social-media" class="w-full h-[45px] flex items-center sm:justify-center md:justify-between sm:mt-12 md:mt-[25px] relative z-10">
+                        <hr class="hidden md:block border-t-[#eeece4] border-t-[3px] w-[90%] -z-10 absolute right-5">
+                        <div class="links w-auto flex h-auto md:ml-7 md:absolute bg-[#f8f7f3]">
+                            <a href="https://dribbble.com/OWWStudio" target="_blank" id="dribble" class="h-[60px] w-[60px] border border-black rounded-full cursor-pointer hover:bg-black hover:text-white transition-colors duration-[400ms] lowercase flex justify-center items-center text-[1.75rem]">db</a>
+                            <a href="https://www.instagram.com/owwstudio/" target="_blank" id="instagram" class="h-[60px] w-[60px] border border-black rounded-full cursor-pointer hover:bg-black hover:text-white transition-colors duration-[400ms] lowercase flex justify-center items-center text-[1.75rem] md:relative right-[8px]">ig</a>
+                            <a href="https://www.facebook.com/owwstudio/" target="_blank" id="facebook" class="h-[60px] w-[60px] border border-black rounded-full cursor-pointer hover:bg-black hover:text-white transition-colors duration-[400ms] lowercase flex justify-center items-center text-[1.75rem] md:relative right-4">fb</a>
+                            <a href="https://twitter.com/owwstudio" target="_blank" id="twitter" class="h-[60px] w-[60px] border border-black rounded-full cursor-pointer hover:bg-black hover:text-white transition-colors duration-[400ms] lowercase flex justify-center items-center text-[1.75rem] md:relative right-6">x</a>
+                        </div>
+                    </div>
+                    <div id="statistics" class="w-full h-[240px] flex sm:flex-col md:flex-row mt-8 relative">
+                        <div class="sm:w-full md:w-1/2 h-full flex flex-col justify-center sm:text-center md:text-right relative">
+                            <h4 class="sm:text-[2rem] sm-l:text-[3rem] xxl:text-[4rem] xxxl:text-[5rem] font-bold italic md:relative md:right-10"><sup>+</sup>250k</h4>
+                            <p class="w-full font-medium sm:text-center md:text-right md:relative md:right-10 md:pl-10 lg:pl-20">Videos that reach a wide audience and give lasting impression</p>
+                        </div>
+                        <div class="sm:w-full md:w-1/2 h-full flex flex-col justify-center relative sm:text-center md:text-right">
+                            <h4 class="sm:text-[2rem] sm-l:text-[3rem] xxl:text-[4rem] xxxl:text-[5rem] font-bold italic md:relative md:right-5"><sup>+</sup>800k</h4>
+                            <p class="w-full font-medium text-center md:text-right md:relative md:right-5 md:pl-5 lg:pl-20">Hours watched, engaging storytelling that captivates viewers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image sm:w-full md:w-1/2 h-full flex justify-center">
+                    <img src="build/img/home-cover.png" alt="" class="w-full sm:mt-14">
+                </div>
+            </section>
+            <section id="about" class="min-w-full md:h-[840px] lg:h-[860px] bg-[#020202] text-[#f8f7f3] scroll-mt-24 mt-20">
+                <div class="text w-full h-auto flex items-center justify-center space-x-32 relative bottom-24">
+                    <div class="word flex relative">
+                        <h2 class="text-[9rem] font-bold lowercase">about</h2>
+                        <div class="w-[25px] h-[25px] rounded-full bg-[#f8f7f3] absolute -right-16 top-[60%]"></div>
+                    </div>
+                    <div class="word flex relative">
+                        <h2 class="text-[9rem] font-bold lowercase">about</h2>
+                        <div class="w-[25px] h-[25px] rounded-full bg-[#f8f7f3] absolute -right-16 top-[60%]"></div>
+                    </div>
+                    <div class="word flex relative">
+                        <h2 class="text-[9rem] font-bold lowercase">about</h2>
+                        <div class="w-[25px] h-[25px] rounded-full bg-[#f8f7f3] absolute -right-16 top-[60%]"></div>
+                    </div>
+                </div>
+                <div class="about-cover w-full h-fit relative bottom-24 flex justify-center items-center">
+                    <img src="build/img/shape-bg.png" alt="shape background" class="lg:w-1/2 xxl:w-[45%] xxxl:w-[40%] absolute sm:top-2/3 sm:-translate-y-2/3">
+                    <img src="build/img/about-cover.png" alt="about boy cover" class="z-10 relative sm:top-24 md:top-0 sm:w-2/5 md:w-1/3 lg:w-[37.5%] xl:w-[45%] xxl:w-2/5 xxxl:w-[35%] grayscale ml-3">
+                </div>
+            </section>
+            <section id="portfolio" class="w-[95%] xxxl:h-[750px] bg-[#f8f7f3] flex">
+                <div id="gallery" class="w-full h-full relative flex sm:flex-row md:flex-col items-center bottom-16 z-20">
+                    <div class="first-row w-full h-auto flex sm:flex-col items-center md:flex-row md:justify-evenly mb-2">
+                        <img src="build/img/gallery/image1.jpg" class="sm:size-[150px] sm-l:size-[175px] min-[576px]:size-[250px] md:size-[200px] lg:size-[250px] xl:size-[300px] xxl:size-[350px] xxxl:size-[400px] rounded-[10%]" id="image-1">
+                        <img src="build/img/gallery/image2.jpg" class="sm:size-[150px] sm-l:size-[175px] min-[576px]:size-[250px] md:size-[200px] lg:size-[250px] xl:size-[300px] xxl:size-[350px] xxxl:size-[400px] rounded-[10%]" id="image-2">
+                        <img src="build/img/gallery/image3.jpg" class="sm:size-[150px] sm-l:size-[175px] min-[576px]:size-[250px] md:size-[200px] lg:size-[250px] xl:size-[300px] xxl:size-[350px] xxxl:size-[400px] rounded-[10%]" id="image-3">
+                    </div>
+                    <h2 class="sm:text-[4rem] sm-l:text-[5rem] min-[576px]:text-[6rem] md:text-[7rem] lg:text-[8rem] xl:text-[9rem] xxl:text-[11rem] xxxl:text-[13rem] absolute font-extrabold sm:top-[20%] sm:left-1/2 sm:-translate-x-1/2 min-[576px]:top-[21%] md:top-[23.5%] lg:top-[27.5%] xl:top-[27%] xxl:top-1/4 xxxl:top-[27.5%]">portfolio</h2>
+                    <div class="second-row w-full h-auto flex sm:flex-col items-center md:flex-row md:justify-evenly">
+                        <img src="build/img/gallery/image4.jpg" class="sm:size-[150px] sm-l:size-[175px] min-[576px]:size-[250px] md:size-[200px] lg:size-[250px] xl:size-[300px] xxl:size-[350px] xxxl:size-[400px] rounded-[10%]" id="image-4">
+                        <img src="build/img/gallery/image5.jpg" class="sm:size-[150px] sm-l:size-[175px] min-[576px]:size-[250px] md:size-[200px] lg:size-[250px] xl:size-[300px] xxl:size-[350px] xxxl:size-[400px] rounded-[10%] sm:z-10 md:-z-10" id="image-5">
+                        <img src="build/img/gallery/image6.jpg" class="sm:size-[150px] sm-l:size-[175px] min-[576px]:size-[250px] md:size-[200px] lg:size-[250px] xl:size-[300px] xxl:size-[350px] xxxl:size-[400px] rounded-[10%] z-10" id="image-6">
+                    </div>
+                </div>
+            </section>
+            <section id="exhibitions" class="w-full h-[1180px] flex flex-col items-center text-black xl:mt-10 xxl:mt-12 xxxl:mt-16 scroll-mt-20">
+                <div class="text w-full h-auto flex items-center justify-center sm:space-x-12 md:space-x-36">
+                    <div class="word flex relative">
+                        <h2 class="sm:text-[4rem] md:text-[8rem] font-bold lowercase">exhibitions</h2>
+                        <div class="sm:size-[12.5px] md:size-[25px] rounded-full bg-black absolute sm:-right-7 md:-right-[72px] top-[60%]"></div>
+                    </div>
+                    <div class="word flex relative">
+                        <h2 class="sm:text-[4rem] md:text-[8rem] font-bold lowercase">exhibitions</h2>
+                        <div class="sm:hidden md:block w-[25px] h-[25px] rounded-full bg-black absolute md:-right-[72px] top-[60%]"></div>
+                    </div>
+                </div>
+                <div class="events w-[95%] h-full flex flex-col items-center mt-14">
+                    <div class="event w-full h-1/4 flex items-center justify-between border-b-2 border-b-[#eeece4]" id="spain">
+                        <div class="name h-full w-2/5 flex items-center justify-evenly relative">
+                            <h4 class="font-medium text-[1.5rem] hidden xxxl:block">01</h4>
+                            <h3 class="sm:text-[1.25rem] sm-l:text-[1.5rem] md:text-[2rem] lg:text-[3rem] italic font-semibold w-[436.82px] leading-tight">Cinematic Visions Unveiled</h3>
+                        </div>
+                        <div class="date-tickets h-full w-1/2 flex sm:flex-col lg:flex-row items-center sm:justify-center sm:space-y-8 lg:justify-between lg:space-y-0">
+                            <h5 class="font-medium text-center">Madrid Gallery, Spain, 31 Oct 2024</h5>
+                            <button href="#" class="border border-black rounded-full cursor-pointer hover:bg-black hover:text-white transition-colors duration-[400ms] flex justify-center items-center px-6 py-2 font-semibold">Buy Ticket</button>
+                        </div>
+                    </div>
+                    <div class="event w-full h-1/4 flex items-center justify-between border-b-2 border-b-[#eeece4]" id="united-kingdom">
+                        <div class="name h-full w-2/5 flex items-center justify-evenly relative">
+                            <h4 class="font-medium text-[1.5rem] hidden xxxl:block">02</h4>
+                            <h3 class="sm:text-[1.25rem] sm-l:text-[1.5rem] md:text-[2rem] lg:text-[3rem] italic font-semibold w-[436.82px] leading-tight">Frames in Motion</h3>
+                        </div>
+                        <div class="date-tickets h-full w-1/2 flex sm:flex-col lg:flex-row items-center sm:justify-center sm:space-y-8 lg:justify-between lg:space-y-0">
+                            <h5 class="font-medium text-center">Manchester Museum, UK, 24 Oct 2024</h5>
+                            <button href="#" class="border border-black rounded-full cursor-pointer hover:bg-black hover:text-white transition-colors duration-[400ms] flex justify-center items-center px-6 py-2 font-semibold">Buy Ticket</button>
+                        </div>
+                    </div>
+                    <div class="event w-full h-1/4 flex items-center justify-between border-b-2 border-b-[#eeece4]" id="italy">
+                        <div class="name h-full w-2/5 flex items-center justify-evenly relative">
+                            <h4 class="font-medium text-[1.5rem] hidden xxxl:block">03</h4>
+                            <h3 class="sm:text-[1.25rem] sm-l:text-[1.5rem] md:text-[2rem] lg:text-[3rem] italic font-semibold w-[436.82px] leading-tight">Journey Through Time</h3>
+                        </div>
+                        <div class="date-tickets h-full w-1/2 flex sm:flex-col lg:flex-row items-center sm:justify-center sm:space-y-8 lg:justify-between lg:space-y-0">
+                            <h5 class="font-medium text-center">Milan Gallery, Italy, 17 Oct 2024</h5>
+                            <button href="#" class="border border-black rounded-full cursor-pointer hover:bg-black hover:text-white transition-colors duration-[400ms] flex justify-center items-center px-6 py-2 font-semibold">Buy Ticket</button>
+                        </div>
+                    </div>
+                    <div class="event w-full h-1/4 flex items-center justify-between border-b-2 border-b-[#eeece4]" id="france">
+                        <div class="name h-full w-2/5 flex items-center justify-evenly relative">
+                            <h4 class="font-medium text-[1.5rem] hidden xxxl:block">04</h4>
+                            <h3 class="sm:text-[1.25rem] sm-l:text-[1.5rem] md:text-[2rem] lg:text-[3rem] italic font-semibold w-[436.82px] leading-tight">Experimental Narratives</h3>
+                        </div>
+                        <div class="date-tickets h-full w-1/2 flex sm:flex-col lg:flex-row items-center sm:justify-center sm:space-y-8 lg:justify-between lg:space-y-0">
+                            <h5 class="font-medium text-center">Paris Museum, France, 10 Oct 2024</h5>
+                            <button href="#" class="border border-black rounded-full cursor-pointer hover:bg-black hover:text-white transition-colors duration-[400ms] flex justify-center items-center px-6 py-2 font-semibold">Buy Ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="sm:w-[95%] xxxl:w-full h-full flex flex-col items-center mt-28 relative" id="contact">
+                <div class="navbar w-full hidden md:flex justify-between items-center">
+                    <a href="index.html" class="sm:w-full md:w-auto z-10 sm:pl-2 xxxl:pl-10">
+                        <img src="build/img/logo.png" alt="main logo" class="w-20">
+                        <nav class="md:w-3/5 lg:w-1/2 xxl:w-2/5 h-auto hidden md:flex md:justify-center md:space-x-10 items-center text-black font-medium">
+                            <a href="#top">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#portfolio">Portfolio</a>
+                            <a href="#exhibition">Exhibition</a>
+                            <a href="#contact">Contact</a>
+                        </nav>
+                    </a>
+                </div>
+                <h1 class="font-bold sm:text-[5rem] sm-l:text-[7rem] md:text-[12rem] lg:text-[15rem] xl:text-[17rem] xxl:text-[19.5rem] xxxl:text-[23rem]">vidéaste</h1>
+                <div class="copyright w-full h-full flex justify-center items-center text-black mt-10">
+                    <p class="font-semibold text-center">
+                            Design and images: Adhiari Subekti (<a href="instagram.com/designdhiari" class="hover:text-slate-400 transition-colors duration-500 italic">Instagram</a>)
+                        <br>Web Developer: Georgi Zhelev (a.k.a. <a href="github.com/GeorgeDash" class="hover:text-slate-400 transition-colors duration-500 italic">GeorgeDash</a>) 
+                        <br>All rights to the design and the images go to their owner. 
+                        <br>Note that I made some slight changes to the site for copyright reasons!
+                    </p>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
